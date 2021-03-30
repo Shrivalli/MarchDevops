@@ -18,6 +18,7 @@ Second Sprint - View slots, Book slot
 Project Managers- Scrum Master - lead Developers and Testers
 Sprint Review Meeting - 15 mins
 Sprint Retrospection - Analysis of the reason of the Sprint Backlogs, create an action plan
+Agile data is modified using git
 
 Agile Tools 
 1. Scrum

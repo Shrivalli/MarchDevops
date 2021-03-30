@@ -2,3 +2,11 @@
 initialize a repository in the working directory
 2. git status
 to know the list of tracked/untracked files
+3. git remote add origin remoteurl
+To mark the remote repo to the local repo
+4.git rm --cached filename
+To remove the file from tracking/staging
+5. git commit -m "message"
+To commit the files into the local repo
+6. git push origin master
+To push the files from local repo to Remote repo
