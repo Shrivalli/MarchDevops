@@ -1,0 +1,19 @@
+Why VCS ->Version Control System
+
+1.Multiple Resources are working with a single document/project
+2. To keep track of the changes made by each resource.
+
+Types of VCS:
+1. Local
+2. Centralized
+3. Distributed
+
+Local -> MS word, Excel, Powerpoint
+Centralized -> Team Foundation Server from Microsoft, SVN --> Subversion
+
+Distributed -> Multiple local repositories are maintained 
+Git --> local rep  -> download and install in the local system
+Github --> Remote rep --> create an account for us in github.com
+
+
+
