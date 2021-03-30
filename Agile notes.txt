@@ -1,0 +1,37 @@
+Agile :
+Waterfall Model:
+1. Requirement Gathering - client - Software Requirement Specification
+2. Analysis
+3. Design
+4. Coding
+5. Testing
+6. Deployment - Client
+7. Maintenance
+
+Agile -> Methedology  -> Client Interaction Regularly Done
+Product - Product Backlog --> Day 1
+Requirement - User Stories -> (login,Register, View Slots, Book Slot, Make Payment)
+Client - Product Owner
+Sprint - 15 days (2 user stories - login, regsiter)
+Sprint Backlog - Pending things of every sprint
+Second Sprint - View slots, Book slot
+Project Managers- Scrum Master - lead Developers and Testers
+Sprint Review Meeting - 15 mins
+Sprint Retrospection - Analysis of the reason of the Sprint Backlogs, create an action plan
+
+Agile Tools 
+1. Scrum
+2. Kanban
+3. Azure Boards
+
+
+
+
+
+
+
+
+
+
+
+

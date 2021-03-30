@@ -1,0 +1,4 @@
+1. git init
+initialize a repository in the working directory
+2. git status
+to know the list of tracked/untracked files

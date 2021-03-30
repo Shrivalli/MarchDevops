@@ -1,0 +1,77 @@
+linux
+1.ls
+2. vi
+3. cat
+4. touch
+5. ls -a
+6. ls -l
+7. pwd
+8. whoami - ec2-user
+9. cp sourcefilename targetfilename
+10. ls -l | more  --> Pipe symbol - output of one command is input of another command
+11. ls -l | less
+12. uname
+13. history
+14. history > newfile --> Redirection operator is used to transfer the output of a command
+into a file.
+15. sudo su --> to switch to root user
+16. sudo kill pid -> to kill a process 
+17. scp source destination --> secure copy
+18. mv source destination 
+19. cut command is to cut a particular column or a field with delimiter
+cut -d " " -f 4 Marchlist
+20. grep command is used to search a string in a file
+cat Marchlist | grep -i name.sh
+cat Marchlist | grep -c s*
+21. Find . -name "s*"
+22. chmod 764 name.sh
+r- read 4
+w- write 2
+x- execute (shell scripting) 1
+1 Owner of the file
+2 Group to which the owner belongs
+3 Others
+rwxrwxrwx
+23. Error Redirection - To redirect the errors into a file instead of displaying 
+it on the monitor
+./name.sh 2> errfile
+24. Shell Scripting - programs that can be written on Unix/Linux OS.
+vi name.sh
+echo "enter ur name"
+read name
+echo "Your name is " $name
+25. ps
+26. df
+28. du
+29. top
+30. curl
+31. wget
+32. tar cvf sam.tar *.txt --> To create the tar file
+tar tvf sam.tar --> know the contents of the tar file
+tar xvf ../Marchbatch/sam.tar --> Extract the contents of the tar file
+33. zip -r -q -e 4 test *.sh *.txt	 
+-r --> recursive
+-q --> quiet 
+-e --> encrypt
+4 --> level of compression (6 is the default)
+34. unzip test.zip
+35. tee
+36. ssh-keygen
+37. ln -s ../Marchbatch/firstfile.txt deskfirst
+Creates a shortcut of the file (Symbolic link)
+38. nslookup
+39. dig
+40.lsof(List of open files)
+41. netstat - monitor network connections
+
+
+Flavours of Linux
+1. Ubuntu
+2. Centos
+3. Fedora
+4. Debian
+5. RHEL - RedHat Enterprise Linux
+6. SUSE 
+
+
+
