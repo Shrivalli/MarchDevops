@@ -73,5 +73,5 @@ Flavours of Linux
 5. RHEL - RedHat Enterprise Linux
 6. SUSE 
 
-
+Linux commands are completed
 
