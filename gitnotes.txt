@@ -10,3 +10,14 @@ To remove the file from tracking/staging
 To commit the files into the local repo
 6. git push origin master
 To push the files from local repo to Remote repo
+7. git pull origin master (git pull url)
+To pull the data from Remote repo to working Copy
+8. Git clone url
+To download the codes from github
+9. Git fetch
+To get the metadata information regarding the difference between REmote repo and local repo
+10. Git checkout
+To bring the changes into the local repo
+11. fork
+To copy a project from github account to another account in github
+
