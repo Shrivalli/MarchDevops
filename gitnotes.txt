@@ -10,3 +10,43 @@ To remove the file from tracking/staging
 To commit the files into the local repo
 6. git push origin master
 To push the files from local repo to Remote repo
+7. git pull origin master (git pull url)
+To pull the data from Remote repo to working Copy
+8. Git clone url
+To download the codes from github
+9. Git fetch
+To get the metadata information regarding the difference between REmote repo and local repo
+10. Git checkout
+To bring the changes into the local repo
+11. fork
+To copy a project from github account to another account in github
+12. To know the remote repo of a project
+git remote -v
+13. git remote show origin
+To know more information about the remote repo(Regarding branches)
+14. git remote rename oldname newname
+To change the name of the shortname to newone
+15. git remote remove origin
+To remove the connection between the remote repo and local repo
+16.git remote set-url origin new.git.url/here
+To change the url for a origin
+17. git reset --soft commitid
+To reset to a particular commit id
+
+Branching in Git:
+To create a new Branch: git branch <branchname>
+To know the current Branch: git branch
+To switch among the branches: git checkout <branchname>
+
+To push the newbranch into the remote github:
+git push --set-upstream origin <branchname>
+
+To delete a branch : git branch -d <Branchname>
+
+Git Merge: Merge branches from Git
+Only target branch is changed.Source Branch History remains the same.
+Preserves history
+
+Git Rebase: Integrate changes from one branch to another.
+Rebase flattens History
+Moves a feature branch into a master branch
