@@ -20,4 +20,16 @@ To get the metadata information regarding the difference between REmote repo and
 To bring the changes into the local repo
 11. fork
 To copy a project from github account to another account in github
-
+12. To know the remote repo of a project
+git remote -v
+13. git remote show origin
+To know more information about the remote repo(Regarding branches)
+14. git remote rename oldname newname
+To change the name of the shortname to newone
+15. git remote remove origin
+To remove the connection between the remote repo and local repo
+16.git remote set-url origin new.git.url/here
+To change the url for a origin
+17. git reset --soft commitid
+To reset to a particular commit id
+18.
