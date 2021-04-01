@@ -1,0 +1,105 @@
+Install git:
+sudo yum install git -y
+
+Create a Directory (if you want):
+mkdir gitsample
+cd gitsample
+
+setup git config:
+git config --global user.name "Shrivalli"
+git config --global user.email "Shrivalli04@gmail.com"
+
+git config credential.helper store
+
+Create github Account:
+www.github.com and register
+
+Create your own project on github:
+Create a Repository by clicking on New Repo(DevopsGit)
+
+Clone the project to your local:
+git clone url
+
+Git in Action:
+
+Clone: Making a copy of the Repo in our system (downloading)
+Fork: Copy in the Github Account
+Pull: Fetching the last modified repository (refreshing)
+Fetch: Fetches the latest metadata info from the original. + git merge
+
+Git Index and Staging Area:
+
+Working tree -> working copy 
+
+To add into staging Area: git add .
+
+Git Index -> used as a staging area between working directory and repo. 
+git index =newly added files + already committed files
+Staging Area = newly added files. (Do not store committed files)
+Git diff -> shows difference between working area and staging area.
+
+git diff --staged --> to know about the changes with the previous commits
+
+Working with Remote and Upstream:
+git remote -v
+git remote add <shortname> <url>
+git remote show <shortname>
+git remote rename <oldname> <newname>
+git remote remove <shortname>
+
+
+git reset --soft HEAD~1
+git log --oneline
+
+Branching in Git:
+To create a new Branch: git branch <branchname>
+To know the current Branch: git branch
+To switch among the branches: git checkout <branchname>
+
+To push the newbranch into the remote github:
+git push --set-upstream origin <branchname>
+
+To delete a branch : git branch -d <Branchname>
+
+Git Merge: Merge branches from Git
+Only target branch is changed.Source Branch History remains the same.
+Preserves history
+
+Git Rebase: Integrate changes from one branch to another.
+Rebase flattens History
+Moves a feature branch into a master branch
+
+master - newfile
+dev - devfile, newfile
+bug - issues, newfile, secondfile
+
+git checkout dev
+git rebase master
+Merge:
+from master --> current branch
+git merge dev(contents of dev branch gets into the master branch)
+
+master - newfile, devfile
+dev- devfile, newfile
+
+git checkout master
+git merge <newbranchname>
+
+master - newfile, devfile, issues, secondfile
+
+git log --oneline
+git branch -a  --> to list all remote branches
+
+
+master-> samplefile(project template), issuefile (rebase),
+firstbranch --> samplefile, demofile (login)
+dev --> samplefile, issuefile (admin)
+
+
+
+
+
+
+
+
+
