@@ -1,0 +1,134 @@
+1. What is Git?
+2. What is DVCS?
+3. Adv of using VCS?
+4. Diff between Git and SVN?
+5. Diff between Git and Github?
+6. Language used in Git? --> C
+7. Git repo hosting functions?
+Github, Gitlab, Bitbucket, SourceForge and GitEnterprise
+8. What is a repository in Git?
+9. Bare Repository in Git?
+No working files. no .git subdirectory. 
+10. What is a commit message?
+11. Some Basic Git commands
+12. fix a Broken commit
+git commit --commit
+13. Conflict in Git?
+14. How to resolve conflict in Git
+identify the file 
+make the changes
+git add, git commit
+15. revert a commit that has already pushed and made public?
+1. remove and fix the bad file and push the file again
+2. new commit that undoes the previous commits
+(git revert commitid)
+16. what is subgit?
+tool for svn to Git migration.
+17. Diff between Git pull and fetch?
+18. what is staging area or index?
+19. what is use of git instaweb?
+automatically direct a web browser and run a webserver with an interface into your local repo.
+
+Intermediate:
+1. Git is-tree?
+represents a tree object including the mode and the name of each item and the SHA-1 value of the tree.
+2. Git Stash?
+takes the working directory, your modified tracked files and staged changes and saves it on a stack of unfinished changes that you can reapply at any time.
+3. Git stash Apply?
+bring back hte saved changes tothe current working dir.
+4. what work is restored when the deleted branch is recovered?
+the files were stashed and saved in the stash index list will be recovered back. Any untracked files will be lost.
+5. Diff between git status and git diff
+6. Diff between git clone and git remote
+7. Git stash Drop?
+remove the last added stash item by def, 
+8. List of files that changed during a commit?
+git diff-tree -r{hash}
+git diff-tree --no-commitid --name-only -r{hash}
+9. Git config?
+change git configuration including username and email
+10. what does commit object contain?
+a set of files
+ref to parent commit objects
+an SHA1 name
+11. Describe branching stratergies that is used:
+Feature
+Task
+Release
+12. Advantages of forking of workflow
+adv -> contributions. 
+own public repo and not common repo.
+13. how to check whether a branch has already been merged into the master?
+git branch --merged
+git branch --no-merged
+14. additional commit rather than amending an existing commit?
+amend opn destroys the state that was previously saved in a commit
+Growth of a small commit and acquire unrelated changes
+15. hook comprise in Git?
+This directory consists of shell scripts that are activated if you run the corresponding Git commands
+16. How to return a commit that has just been pushed?
+One or more commits can be reverted through the use of git revert
+Alternatively, there is always an option to check out the state of a particular commit from the past and commit it anew.
+17. How to remove a file from Git without removing it from your file system?
+git reset filename
+echo filename >>.gitignore
+18. Git workflow?
+to record the history of the project, Gitflow workflow employs two parallel long running branches, master and develop
+19. Difference between head, working tree and index?
+working tree-> source files
+index-> single large binary file
+head -> last commit in the currently checked out branch
+20. Diff between fork, branch and clone
+21. Different ways by which we can refer to a commit?
+refs
+relative to one another
+merge commits-> 
+22. Diff between rebase and merge
+rebase -> rewrites commit history
+merge -> integrate into single branch
+23. Diff between revert and reset?
+
+Advanced 
+1. How to squash last N commits into a single commit?
+git reset -soft HEAD~N &&
+git commit
+git reset -soft HEAD~N &&
+git commit -edit -m "$(git log -format=%B -reverse .HEAD@{N})"
+
+2. Git bisect? how to use that to determine the source of a bug?
+git bisect <subcommand> <options>
+which commit in the history introduced a bug.
+uses binary search to identify the commit which caused bug
+
+3. Integrate git with jenkins
+Manage Jenkins
+Manage plugins
+Search for Git plugin
+Github Branch source plugin
+
+4. How to configure a repo to run code sanity checking tools right before making commits?
+Sanity or smoke test determines whether it is possible and reasonable to continue testing
+
+5. Git cherry-pick?
+introduce a particular commit from one branch within a repo onto a diff branch
+used to foward or back port commits from a maintenance branch to a dev branch
+git cherry-pick commit id
+
+6. Git reflog?
+keeps a track of every single change made in the reference of a repo. 
+git reflog
+
+7. how to recover a deleted branch using git reflog?
+History logs of all reference
+git reflog
+
+Identify the timestamp
+git checkout -b Branchname HEAD@{4}
+
+8. git reflog sub commands?
+git reflog --help
+git reflog show
+git reflog expire
+git reflog delete
+git reflog exists?
+ 
